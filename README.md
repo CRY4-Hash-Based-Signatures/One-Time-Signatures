@@ -15,3 +15,9 @@ Rust implementation of simple Lamport and Winternitz one time signatures
 
     let sig = sk.sign_arbitrary(message).unwrap();
     pk.verify_arbitrary(message, &sig).unwrap();
+    
+## Benchmark
+
+To build the benchmark file run:
+
+    cargo build --features build-binary --bin benchmark
