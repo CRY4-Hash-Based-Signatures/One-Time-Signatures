@@ -12,3 +12,11 @@ rand = "0.8.5"
 sha2 = "0.10.2"
 itertools = "0.8"
 bitvec = "1.0.0"
+
+
+[features]
+build-binary = []
+
+[[bin]]
+name = "benchmark"
+required-features = ["build-binary"]
